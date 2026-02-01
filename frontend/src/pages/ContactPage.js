@@ -1,73 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Instagram, Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { useToast } from '@/hooks/use-toast';
 
 const ContactPage = () => {
   const { t } = useLanguage();
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch('https://formspree.io/f/xyzabcde', {
-        method: 'POST',
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-          _subject: `New booking inquiry from ${formData.name}`,
-          _replyto: formData.email
-        }),
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      });
-
-      if (response.ok) {
-        toast({
-          title: 'Success!',
-          description: 'Your message has been sent. I\'ll get back to you within 24 hours!',
-          variant: 'default'
-        });
-        setFormData({ name: '', email: '', phone: '', message: '' });
-      } else {
-        throw new Error('Form submission failed');
-      }
-    } catch (error) {
-      toast({
-        title: 'Error',
-        description: 'Failed to send message. Please try emailing directly at lorettaperaldi@gmail.com',
-        variant: 'destructive'
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div data-testid="contact-page" className="pt-32 pb-24 bg-bone min-h-screen">
@@ -128,81 +69,36 @@ const ContactPage = () => {
             transition={{ duration: 0.7 }}
             className="bg-pastelGreen p-12"
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="font-display font-bold text-burgundy mb-2 block uppercase text-sm">
-                  {t('contact.name')}
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full bg-transparent border-b-2 border-charcoal text-charcoal placeholder-charcoal/50 focus:outline-none focus:border-burgundy transition-colors py-2"
-                  placeholder="Jane Doe"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="font-display font-bold text-burgundy mb-2 block uppercase text-sm">
-                  {t('contact.email')}
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full bg-transparent border-b-2 border-charcoal text-charcoal placeholder-charcoal/50 focus:outline-none focus:border-burgundy transition-colors py-2"
-                  placeholder="jane@example.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="font-display font-bold text-burgundy mb-2 block uppercase text-sm">
-                  {t('contact.phone')}
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  className="w-full bg-transparent border-b-2 border-charcoal text-charcoal placeholder-charcoal/50 focus:outline-none focus:border-burgundy transition-colors py-2"
-                  placeholder="+33 6 00 00 00 00"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="font-display font-bold text-burgundy mb-2 block uppercase text-sm">
-                  {t('contact.message')}
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  rows="4"
-                  className="w-full bg-transparent border-b-2 border-charcoal text-charcoal placeholder-charcoal/50 focus:outline-none focus:border-burgundy transition-colors py-2 resize-none"
-                  placeholder="Tell me about your dream photoshoot..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-burgundy text-bone font-display font-bold uppercase tracking-widest py-3 hover:bg-terracotta transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed mt-8"
-              >
-                {isSubmitting ? t('contact.sending') : t('contact.submit')}
-              </button>
-
-              <p className="font-body text-xs text-charcoal/60 text-center mt-4">
-                Or email directly: lorettaperaldi@gmail.com
+            <h2 className="font-display font-bold text-2xl text-burgundy mb-6 uppercase">
+              {t('contact.message')}
+            </h2>
+            <p className="font-body text-base text-charcoal leading-relaxed mb-8">
+              Thank you for your interest! I'm excited to hear about your fairytale moments. 
+              Please reach out via email or Instagram with your ideas, and I'll get back to you within 24 hours.
+            </p>
+            
+            <div className="bg-bone p-6 border-2 border-burgundy">
+              <p className="font-body text-charcoal mb-4">
+                <span className="font-display font-bold text-burgundy">Email:</span><br />
+                <a 
+                  href="mailto:lorettaperaldi@gmail.com"
+                  className="text-burgundy hover:text-terracotta transition-colors underline"
+                >
+                  lorettaperaldi@gmail.com
+                </a>
               </p>
-            </form>
+              <p className="font-body text-charcoal">
+                <span className="font-display font-bold text-burgundy">Instagram:</span><br />
+                <a 
+                  href="https://instagram.com/scarlette_photography"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-burgundy hover:text-terracotta transition-colors underline"
+                >
+                  @scarlette_photography
+                </a>
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>
