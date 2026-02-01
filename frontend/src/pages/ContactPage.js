@@ -109,13 +109,13 @@ const ContactPage = () => {
                 <div>
                   <h3 className="font-display font-bold text-burgundy mb-1 uppercase text-sm">Instagram</h3>
                   <a
-                    href="https://instagram.com"
+                    href="https://instagram.com/scarlette_photography"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-testid="contact-instagram-link"
                     className="font-body text-charcoal hover:text-burgundy transition-colors"
                   >
-                    @scarlette_photography (Coming Soon)
+                    @scarlette_photography
                   </a>
                 </div>
               </div>

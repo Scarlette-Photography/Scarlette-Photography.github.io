@@ -42,7 +42,7 @@ export const Footer = () => {
             <h4 className="font-display font-bold uppercase tracking-widest text-sm mb-4">{t('footer.connect')}</h4>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/scarlette_photography"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="footer-instagram"
