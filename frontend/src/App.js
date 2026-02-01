@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
@@ -36,7 +36,7 @@ function App() {
   return (
     <LanguageProvider>
       <div className="App">
-        <BrowserRouter>
+        <HashRouter>
           <Navigation />
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -48,7 +48,7 @@ function App() {
           <Footer />
           <LanguageSwitcher />
           <Toaster position="top-center" />
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </LanguageProvider>
   );
