@@ -134,7 +134,7 @@ const HomePage = () => {
             className="relative"
           >
             <img
-              src="https://images.pexels.com/photos/27184190/pexels-photo-27184190.jpeg?w=1600&q=85"
+              src="../../image_H_3.jpg.webp"
               alt="Château de Fontainebleau"
               className="w-full h-[600px] object-cover"
             />
