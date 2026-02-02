@@ -38,19 +38,30 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Copy built files to root
-          cp -r frontend/build/* .
+          # Copy built files to root - verbose
+          echo "Copying frontend/build contents to root..."
+          cp -rv frontend/build/* .
           
           # Ensure .nojekyll exists
           touch .nojekyll
+          echo "Created .nojekyll"
           
-          # Remove old node_modules and frontend source to keep repo clean
-          rm -rf node_modules frontend/node_modules frontend/.next 2>/dev/null || true
+          # List files to verify they exist
+          echo "Files at root after copy:"
+          ls -la index.html static/ manifest.json asset-manifest.json 2>&1 || echo "Some files missing"
           
-          # Git add everything at root level
-          git add index.html manifest.json asset-manifest.json .nojekyll
-          git add static/ 2>/dev/null || true
+          # Git add all new/modified files
+          echo "Adding files to git..."
+          git add .
           
-          # Commit and push
-          git commit -m "Deploy: automated GitHub Pages deployment" --allow-empty
+          # Check status
+          echo "Git status:"
+          git status
+          
+          # Commit (will not be empty if files changed)
+          echo "Committing..."
+          git commit -m "Deploy: automated GitHub Pages deployment" || echo "No changes to commit"
+          
+          # Push
+          echo "Pushing..."
           git push origin master
