@@ -8,15 +8,11 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -36,11 +32,23 @@ jobs:
         working-directory: ./frontend
         run: yarn build
       
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./frontend/build
-      
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+        run: |
+          # Configure git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Remove everything except .git, frontend, and workflow files
+          find . -maxdepth 1 -type f ! -name '.nojekyll' -exec rm {} \;
+          find . -maxdepth 1 -type d ! -name '.' ! -name '.git' ! -name '.github' ! -name 'frontend' -exec rm -rf {} + 2>/dev/null || true
+          
+          # Copy built files to root
+          cp -r frontend/build/* .
+          
+          # Ensure .nojekyll exists
+          touch .nojekyll
+          
+          # Stage and commit
+          git add -A
+          git commit -m "Deploy: build and deploy to GitHub Pages" --allow-empty
+          git push origin master
