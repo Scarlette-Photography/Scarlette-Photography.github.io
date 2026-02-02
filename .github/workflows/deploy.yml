@@ -38,17 +38,19 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Remove everything except .git, frontend, and workflow files
-          find . -maxdepth 1 -type f ! -name '.nojekyll' -exec rm {} \;
-          find . -maxdepth 1 -type d ! -name '.' ! -name '.git' ! -name '.github' ! -name 'frontend' -exec rm -rf {} + 2>/dev/null || true
-          
           # Copy built files to root
           cp -r frontend/build/* .
           
           # Ensure .nojekyll exists
           touch .nojekyll
           
-          # Stage and commit
-          git add -A
-          git commit -m "Deploy: build and deploy to GitHub Pages" --allow-empty
+          # Remove old node_modules and frontend source to keep repo clean
+          rm -rf node_modules frontend/node_modules frontend/.next 2>/dev/null || true
+          
+          # Git add everything at root level
+          git add index.html manifest.json asset-manifest.json .nojekyll
+          git add static/ 2>/dev/null || true
+          
+          # Commit and push
+          git commit -m "Deploy: automated GitHub Pages deployment" --allow-empty
           git push origin master
