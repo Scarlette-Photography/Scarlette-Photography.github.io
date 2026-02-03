@@ -154,7 +154,7 @@ const HomePage = () => {
               className="relative"
             >
               <img
-                src="https://images.unsplash.com/photo-1637782148212-d4be0f1f67f0?w=800&q=85"
+                src="../../image_H_4.jpg"
                 alt="Couple exploring"
                 className="w-full h-[500px] object-cover"
               />
