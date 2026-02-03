@@ -236,7 +236,7 @@ const HomePage = () => {
               viewport={{ once: true }}
             >
               <img
-                src="https://images.unsplash.com/photo-1637782148244-21ac27bc1b91?w=800&q=85"
+                src="/image_H_7.jpg"
                 alt="Romantic château moment"
                 className="w-full h-[450px] object-cover"
               />
