@@ -30,7 +30,7 @@ const ServicesPage = () => {
       tagline: t('services.solo.tagline'),
       description: t('services.solo.description'),
       perfect: t('services.solo.perfect'),
-      image: 'https://images.unsplash.com/photo-1707392573565-f1831cfc5099?w=1200&q=85'
+      image: '/image_S_2.jpg'
     },
     {
       id: 'families',
