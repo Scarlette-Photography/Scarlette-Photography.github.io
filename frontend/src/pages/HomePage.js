@@ -195,7 +195,7 @@ const HomePage = () => {
             viewport={{ once: true }}
           >
             <img
-              src="https://images.unsplash.com/photo-1707392573565-f1831cfc5099?w=1600&q=85"
+              src="../../image_H_5.jpg"
               alt="Photographer in nature"
               className="w-full h-[500px] object-cover"
             />
