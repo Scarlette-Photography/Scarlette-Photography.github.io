@@ -134,7 +134,7 @@ const HomePage = () => {
             className="relative"
           >
             <img
-              src="../../image_H_3.jpg.webp"
+              src="/image_H_3.jpg.webp"
               alt="Château de Fontainebleau"
               className="w-full h-[600px] object-cover"
             />
@@ -154,7 +154,7 @@ const HomePage = () => {
               className="relative"
             >
               <img
-                src="../../image_H_4.jpg"
+                src="/image_H_4.jpg"
                 alt="Couple exploring"
                 className="w-full h-[500px] object-cover"
               />
@@ -195,7 +195,7 @@ const HomePage = () => {
             viewport={{ once: true }}
           >
             <img
-              src="../../image_H_5.jpg"
+              src="/image_H_5.jpg"
               alt="Photographer in nature"
               className="w-full h-[500px] object-cover"
             />
@@ -221,7 +221,7 @@ const HomePage = () => {
               className="md:col-span-2"
             >
               <img
-                src="../../image_H_6.jpg"
+                src="/image_H_6.jpg"
                 alt="Photographer at work"
                 className="w-full h-[400px] object-cover"
               />
