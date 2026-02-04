@@ -50,7 +50,7 @@ const ServicesPage = () => {
       tagline: t('services.groups.tagline'),
       description: t('services.groups.description'),
       perfect: t('services.groups.perfect'),
-      image: 'https://images.unsplash.com/photo-1761472084994-61d80b8f4053?w=1200&q=85'
+      image: '/image_S_4.jpg'
     }
   ];
 
