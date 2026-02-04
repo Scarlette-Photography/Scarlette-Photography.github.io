@@ -264,10 +264,10 @@ const HomePage = () => {
         <div className="max-w-screen-2xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              'https://images.unsplash.com/photo-1765915481912-edff5fea6c62?w=600&q=85',
-              'https://images.unsplash.com/photo-1761472084994-61d80b8f4053?w=600&q=85',
-              'https://images.unsplash.com/photo-1615135795000-e402f3473b6b?w=600&q=85',
-              'https://images.unsplash.com/photo-1500771309643-de18b0aea901?w=600&q=85'
+              '/image_H_8.jpg',
+              '/image_H_9.jpg',
+              '/image_H_10.jpg',
+              '/image_H_11.jpg'
             ].map((src, index) => (
               <motion.div
                 key={index}
