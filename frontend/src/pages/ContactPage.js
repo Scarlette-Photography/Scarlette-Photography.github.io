@@ -69,9 +69,6 @@ const ContactPage = () => {
             transition={{ duration: 0.7 }}
             className="bg-pastelGreen p-12"
           >
-            <h2 className="font-display font-bold text-2xl text-burgundy mb-6 uppercase">
-              {t('contact.message')}
-            </h2>
             <p className="font-body text-base text-charcoal leading-relaxed mb-8">
               <span className="font-display font-bold text-burgundy">REACH OUT WITH THIS FORMAT</span><br /><br />
               <span className="font-bold">Name:</span> Jane Doe<br />
