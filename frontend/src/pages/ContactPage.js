@@ -73,8 +73,14 @@ const ContactPage = () => {
               {t('contact.message')}
             </h2>
             <p className="font-body text-base text-charcoal leading-relaxed mb-8">
-              Thank you for your interest! I'm excited to hear about your fairytale moments. 
-              Please reach out via email or Instagram with your ideas, and I'll get back to you within 24 hours.
+              <span className="font-display font-bold text-burgundy">REACH OUT WITH THIS FORMAT</span><br /><br />
+              <span className="font-bold">Name:</span> Jane Doe<br />
+              <span className="font-bold">Email:</span> jane.doe@example.com<br />
+              <span className="font-bold">Date of the shooting:</span> June 15, 2025<br />
+              <span className="font-bold">Type of shooting:</span> Couple / Engagement<br /><br />
+              <span className="font-bold">Message (optional):</span><br />
+              Hello! My partner and I are visiting Paris next summer and would love to book a romantic photoshoot at Château de Fontainebleau. We're interested in golden hour photography with flowing dresses. Looking forward to hearing from you!<br /><br />
+              You can copy this template and send your inquiry to:
             </p>
             
             <div className="bg-bone p-6 border-2 border-burgundy">
