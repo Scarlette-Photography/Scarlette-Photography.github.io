@@ -221,7 +221,7 @@ const HomePage = () => {
               className="md:col-span-2"
             >
               <img
-                src="/image_H_6.jpg"
+                src="/image_H_6_new.jpg"
                 alt="Photographer at work"
                 className="w-full h-[400px] object-cover"
               />
