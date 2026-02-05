@@ -54,7 +54,7 @@ export const translations = {
         description: 'Gather your best friends for a chic and fun session in one of France\'s most stylish locations. Whether it\'s a bachelorette party or a reunion, we will create magazine-worthy group shots and candid moments of joy.',
         perfect: 'Bachelorette parties, reunions, girls\' trips'
       },
-      cta: 'Ready to create magic? I am currently booking for 2025.',
+      cta: 'Ready to create magic? I am currently booking for 2026.',
       ctaButton: 'CONTACT ME'
     },
     guide: {
@@ -165,7 +165,7 @@ export const translations = {
         description: 'Rassemblez vos meilleurs amis pour une séance chic et amusante dans l\'un des endroits les plus élégants de France. Qu\'il s\'agisse d\'un enterrement de vie de jeune fille ou d\'une réunion, nous créerons des photos de groupe dignes d\'un magazine et des moments de joie candides.',
         perfect: 'Enterrements de vie de jeune fille, réunions, voyages entre filles'
       },
-      cta: 'Prêt à créer de la magie ? Je prends actuellement des réservations pour 2025.',
+      cta: 'Prêt à créer de la magie ? Je prends actuellement des réservations pour 2026.',
       ctaButton: 'CONTACTEZ-MOI'
     },
     guide: {
