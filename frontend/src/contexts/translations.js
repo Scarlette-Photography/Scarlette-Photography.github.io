@@ -93,7 +93,7 @@ export const translations = {
     },
     contact: {
       title: "LET'S CREATE MAGIC TOGETHER",
-      subtitle: "Ready to step into your fairytale? Fill out the form and I'll get back to you within 24 hours to discuss your dream session at Château de Fontainebleau.",
+      subtitle: "Ready to step into your fairytale? Send me a message and I'll get back to you within 24 hours to discuss your dream session at Château de Fontainebleau.",
       name: 'Name',
       email: 'Email',
       phone: 'Phone',
