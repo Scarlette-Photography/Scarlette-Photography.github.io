@@ -15,39 +15,39 @@ const PortfolioPage = () => {
 
   const portfolioImages = [
     {
-      src: 'https://images.unsplash.com/photo-1637782148212-d4be0f1f67f0?w=1200&q=85',
+      src: '/image_P_1.jpg',
       alt: 'Adventurous couple'
     },
     {
-      src: 'https://images.unsplash.com/photo-1637782148244-21ac27bc1b91?w=1200&q=85',
+      src: '/image_P_2.jpg',
       alt: 'Couple on bridge'
     },
     {
-      src: 'https://images.pexels.com/photos/27184190/pexels-photo-27184190.jpeg?w=1200',
+      src: '/image_P_3.jpg',
       alt: 'Château gardens'
     },
     {
-      src: 'https://images.unsplash.com/photo-1707392573565-f1831cfc5099?w=1200&q=85',
+      src: '/image_P_4.jpg',
       alt: 'Woman in forest'
     },
     {
-      src: 'https://images.unsplash.com/photo-1765915481912-edff5fea6c62?w=1200&q=85',
+      src: '/image_P_5.jpg',
       alt: 'Whimsical fashion'
     },
     {
-      src: 'https://images.unsplash.com/photo-1761472084994-61d80b8f4053?w=1200&q=85',
+      src: '/image_P_6.jpg',
       alt: 'Friends mountain'
     },
     {
-      src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=85',
+      src: '/image_P_7.jpg',
       alt: 'Elegant portrait'
     },
     {
-      src: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1200&q=85',
+      src: '/image_P_8.jpg',
       alt: 'Couple dancing'
     },
     {
-      src: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1200&q=85',
+      src: '/image_P_9.jpg',
       alt: 'Romantic moment'
     }
   ];
