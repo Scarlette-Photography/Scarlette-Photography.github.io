@@ -204,7 +204,7 @@ export const translations = {
     },
     contact: {
       title: 'CRÉONS DE LA MAGIE ENSEMBLE',
-      subtitle: "Prêt à entrer dans votre conte de fées ? Remplissez le formulaire et je vous répondrai dans les 24 heures pour discuter de votre séance de rêve au Château de Fontainebleau.",
+      subtitle: "Prêt à entrer dans votre conte de fées ? Envoyez-moi un message et je vous répondrai dans les 24 heures pour discuter de votre séance de rêve au Château de Fontainebleau.",
       name: 'Nom',
       email: 'Email',
       phone: 'Téléphone',
