@@ -65,7 +65,7 @@ export const translations = {
       },
       step2: {
         title: 'The Meet-Up',
-        description: 'I will meet you on location. As a local, I can recommend the best times to avoid crowds.'
+        description: 'I will meet you on location. At the train station, take the local bus to arrive in a few minutes at the château, I will be at the front gate to welcome you.'
       },
       step3: {
         title: 'The Magic',
@@ -176,7 +176,7 @@ export const translations = {
       },
       step2: {
         title: 'Le rendez-vous',
-        description: 'Je vous retrouverai sur place. En tant que locale, je peux recommander les meilleurs moments pour éviter la foule.'
+        description: 'Je vous retrouverai sur place. À la gare, prenez le bus local pour arriver en quelques minutes au château, je serai à la porte d\'entrée pour vous accueillir.'
       },
       step3: {
         title: 'La magie',
