@@ -20,6 +20,9 @@ const ServicesPage = () => {
       tagline: t('services.couples.tagline'),
       description: t('services.couples.description'),
       perfect: t('services.couples.perfect'),
+      price: t('services.couples.price'),
+      shooting: t('services.couples.shooting'),
+      whatYouGet: t('services.couples.whatYouGet'),
       image: '/image_S_1.jpg'
     },
     {
@@ -30,6 +33,9 @@ const ServicesPage = () => {
       tagline: t('services.solo.tagline'),
       description: t('services.solo.description'),
       perfect: t('services.solo.perfect'),
+      price: t('services.solo.price'),
+      shooting: t('services.solo.shooting'),
+      whatYouGet: t('services.solo.whatYouGet'),
       image: '/image_S_2.jpg'
     },
     {
@@ -37,6 +43,9 @@ const ServicesPage = () => {
       icon: Sparkles,
       title: t('services.families.title'),
       subtitle: t('services.families.subtitle'),
+      price: t('services.families.price'),
+      shooting: t('services.families.shooting'),
+      whatYouGet: t('services.families.whatYouGet'),
       tagline: t('services.families.tagline'),
       description: t('services.families.description'),
       perfect: t('services.families.perfect'),
@@ -47,6 +56,9 @@ const ServicesPage = () => {
       icon: Users,
       title: t('services.groups.title'),
       subtitle: t('services.groups.subtitle'),
+      price: t('services.groups.price'),
+      shooting: t('services.groups.shooting'),
+      whatYouGet: t('services.groups.whatYouGet'),
       tagline: t('services.groups.tagline'),
       description: t('services.groups.description'),
       perfect: t('services.groups.perfect'),
@@ -108,6 +120,17 @@ const ServicesPage = () => {
                 <p className="font-body text-sm text-charcoal">
                   <span className="font-bold">{t('guide.perfectFor')}</span> {service.perfect}
                 </p>
+                <div className="mt-6 pt-6 border-t border-terracotta/30">
+                  <p className="font-body text-sm text-charcoal mb-2">
+                    <span className="font-bold">Price:</span> {service.price}
+                  </p>
+                  <p className="font-body text-sm text-charcoal mb-2">
+                    <span className="font-bold">Shooting:</span> {service.shooting}
+                  </p>
+                  <p className="font-body text-sm text-charcoal">
+                    <span className="font-bold">What you get:</span> {service.whatYouGet}
+                  </p>
+                </div>
               </div>
             </motion.div>
           ))}

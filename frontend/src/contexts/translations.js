@@ -31,28 +31,40 @@ export const translations = {
         subtitle: 'ENGAGEMENT & COUPLES',
         tagline: 'For those writing their own love story.',
         description: 'Celebrate your love in the setting of kings and queens. Whether you are proposing, celebrating an anniversary, or simply traveling together, I will capture the intimacy and connection between you. We will utilize the grand staircases and romantic English gardens to create images that look like they belong in a storybook.',
-        perfect: 'Proposals, Honeymoons, Save-the-Dates'
+        perfect: 'Proposals, Honeymoons, Save-the-Dates',
+        price: '60 €',
+        shooting: '1 hour',
+        whatYouGet: '10 photos professionally edited, that YOU will choose from the session'
       },
       solo: {
         title: 'The Protagonist',
         subtitle: 'SOLO PORTRAITS',
         tagline: 'For the dreamer and the adventurer.',
         description: 'Traveling solo to France? Don\'t settle for selfies. Treat yourself to a "Main Character" moment. I will guide you through poses that feel natural and empowering, turning you into the muse of the Château. These are not just travel photos; they are artistic portraits that capture your spirit amidst French grandeur.',
-        perfect: 'Social media content, personal branding, or a confidence boost'
+        perfect: 'Social media content, personal branding, or a confidence boost',
+        price: '60 €',
+        shooting: '1 hour',
+        whatYouGet: '10 photos professionally edited, that YOU will choose from the session'
       },
       families: {
         title: 'Little Princes & Princesses',
         subtitle: 'FAMILY SESSIONS',
         tagline: 'Magic for the whole family.',
         description: 'Let the children run free in the vast gardens while I capture their wonder. My family sessions are relaxed and playful. We avoid stiff poses and focus on laughter, discovery, and the bond you share. We will turn your family trip into a timeless heirloom.',
-        perfect: 'Families on vacation, maternity shoots'
+        perfect: 'Families on vacation, maternity shoots',
+        price: '70 €',
+        shooting: '1 hour',
+        whatYouGet: '10 photos professionally edited, that YOU will choose from the session'
       },
       groups: {
         title: 'The Entourage',
         subtitle: 'FRIENDS & GROUPS',
         tagline: 'Unforgettable moments with your favorite people.',
         description: 'Gather your best friends for a chic and fun session in one of France\'s most stylish locations. Whether it\'s a bachelorette party or a reunion, we will create magazine-worthy group shots and candid moments of joy.',
-        perfect: 'Bachelorette parties, reunions, girls\' trips'
+        perfect: 'Bachelorette parties, reunions, girls\' trips',
+        price: '70 €',
+        shooting: '1 hour',
+        whatYouGet: '10 photos professionally edited, that YOU will choose from the session'
       },
       cta: 'Ready to create magic? I am currently booking for 2026.',
       ctaButton: 'CONTACT ME'
@@ -142,28 +154,40 @@ export const translations = {
         subtitle: 'FIANÇAILLES & COUPLES',
         tagline: 'Pour ceux qui écrivent leur propre histoire d\'amour.',
         description: 'Célébrez votre amour dans le cadre des rois et des reines. Que vous fassiez une demande en mariage, célébriez un anniversaire ou voyagiez simplement ensemble, je capturerai l\'intimité et la connexion entre vous. Nous utiliserons les grands escaliers et les jardins anglais romantiques pour créer des images qui semblent appartenir à un conte de fées.',
-        perfect: 'Demandes en mariage, lunes de miel, save-the-dates'
+        perfect: 'Demandes en mariage, lunes de miel, save-the-dates',
+        price: '60 €',
+        shooting: '1 heure',
+        whatYouGet: '10 photos retouchées professionnellement, que VOUS choisirez parmi la séance'
       },
       solo: {
         title: 'Le Protagoniste',
         subtitle: 'PORTRAITS SOLO',
         tagline: 'Pour le rêveur et l\'aventurier.',
         description: 'Vous voyagez seul en France ? Ne vous contentez pas de selfies. Offrez-vous un moment de "Personnage principal". Je vous guiderai à travers des poses qui semblent naturelles et valorisantes, faisant de vous la muse du Château. Ce ne sont pas que des photos de voyage ; ce sont des portraits artistiques qui capturent votre esprit au milieu de la grandeur française.',
-        perfect: 'Contenu pour réseaux sociaux, image de marque personnelle ou coup de confiance'
+        perfect: 'Contenu pour réseaux sociaux, image de marque personnelle ou coup de confiance',
+        price: '60 €',
+        shooting: '1 heure',
+        whatYouGet: '10 photos retouchées professionnellement, que VOUS choisirez parmi la séance'
       },
       families: {
         title: 'Petits Princes & Princesses',
         subtitle: 'SÉANCES FAMILIALES',
         tagline: 'Magie pour toute la famille.',
         description: 'Laissez les enfants courir librement dans les vastes jardins pendant que je capture leur émerveillement. Mes séances familiales sont détendues et ludiques. Nous évitons les poses rigides et nous concentrons sur le rire, la découverte et le lien que vous partagez. Nous transformerons votre voyage en famille en héritage intemporel.',
-        perfect: 'Familles en vacances, séances maternité'
+        perfect: 'Familles en vacances, séances maternité',
+        price: '70 €',
+        shooting: '1 heure',
+        whatYouGet: '10 photos retouchées professionnellement, que VOUS choisirez parmi la séance'
       },
       groups: {
         title: 'L\'Entourage',
         subtitle: 'AMIS & GROUPES',
         tagline: 'Moments inoubliables avec vos personnes préférées.',
         description: 'Rassemblez vos meilleurs amis pour une séance chic et amusante dans l\'un des endroits les plus élégants de France. Qu\'il s\'agisse d\'un enterrement de vie de jeune fille ou d\'une réunion, nous créerons des photos de groupe dignes d\'un magazine et des moments de joie candides.',
-        perfect: 'Enterrements de vie de jeune fille, réunions, voyages entre filles'
+        perfect: 'Enterrements de vie de jeune fille, réunions, voyages entre filles',
+        price: '70 €',
+        shooting: '1 heure',
+        whatYouGet: '10 photos retouchées professionnellement, que VOUS choisirez parmi la séance'
       },
       cta: 'Prêt à créer de la magie ? Je prends actuellement des réservations pour 2026.',
       ctaButton: 'CONTACTEZ-MOI'
